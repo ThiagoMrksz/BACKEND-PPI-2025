@@ -1,0 +1,27 @@
+{
+  "name": "ppi-2",
+  "version": "1.0.0",
+  "description": "Backend 2025 PPI",
+  "keywords": [
+    "API",
+    "BACK",
+    "END",
+    "MVC",
+    "REST"
+  ],
+  "homepage": "https://github.com/ThiagoMrksz/BACKEND-PPI-2025#readme",
+  "bugs": {
+    "url": "https://github.com/ThiagoMrksz/BACKEND-PPI-2025/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoMrksz/BACKEND-PPI-2025.git"
+  },
+  "license": "ISC",
+  "author": "Thiago Marques",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
