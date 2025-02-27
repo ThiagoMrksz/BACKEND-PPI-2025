@@ -1,3 +1,5 @@
+import UsuarioDB from "../DataBase/usuarioDB.js";
+
 // Programação orientada a objetos
 export default class Usuario {
 
@@ -91,4 +93,42 @@ export default class Usuario {
     get email() {
         return this.#email;
     };
+    //formato JSON de um objeto
+    toJSON(){
+        return {
+            "cpf": this.#cpf,
+            "nome": this.#nome,
+            "dataNasc": this.#dataNasc,
+            "cidade": this.#cidade,
+            "endereco": this.#endereco,
+            "bairro": this.#bairro,
+            "telefone": this.#telefone,
+            "email": this.#email,
+        }
+    };
+
+    async gravar(){
+        const usuDB = new UsuarioDB
+        usuDB.gravar(this);
+    };
+
+    async alterar(){ 
+        usuDB = new UsuarioDB;
+        usuDB.alterar(this);
+
+    };
+
+    async excluir(){
+        const usuDB = new UsuarioDB();
+        usuDB.excluir(this);
+
+    };
+
+    async consultar() {
+        const usuDB = new UsuarioDB();
+        return await usuDB.consultar(this);
+
+    }
+    
+
 }

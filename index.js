@@ -10,7 +10,23 @@ var usuario = new Usuario("999.999.999.99",
     "1@email.com",
 );
 
-usuario.telefone="(18)8888-8888"
+// gravar o usuario no banco de dados
+// resolvendo os métodos assíncronos
+/*  usuario.gravar().then(() => {
+    console.log("Usuario gravado com sucesso!");
+}).catch((erro) => {
+    console.log("Erro ao gravar o usuario: " + erro);
+}); 
+  */
+usuario.excluir().then(() => {
+    console.log("Cliente excluido com sucesso!");
+}).catch((erro) => {
+    console.log("Erro ao excluir o cliente: " + erro);
+}) 
 
-console.log(usuario);
-console.log("O telefone desse usuario é: " + usuario.telefone);
+//recuperação da informação a partir do banco de dados
+/* usuario.consultar().then((listaUsuarios) => {
+    for (const usuario of listaUsuarios) {
+        console.log(usuario.toJSON());
+    }
+}); */

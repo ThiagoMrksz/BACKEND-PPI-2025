@@ -2,6 +2,12 @@
   "name": "ppi-2",
   "version": "1.0.0",
   "description": "Backend 2025 PPI",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [
     "API",
     "BACK",
@@ -19,9 +25,7 @@
   },
   "license": "ISC",
   "author": "Thiago Marques",
-  "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "mysql2": "^3.12.0"
   }
 }
